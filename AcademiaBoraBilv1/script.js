@@ -17,7 +17,6 @@ class UI {
 
     static addUserToList(user) {
         const list = document.querySelector('#user-list');
-
         const row = document.createElement('tr');
 
         row.innerHTML = `
@@ -104,7 +103,7 @@ document.querySelector('#user-form').addEventListener('submit', (e) => {
     const dtNasc = getAge();
     const genero = document.querySelector('#genero').value;
 
-    // Validate
+    // validar
     if(id === '' || name === '' || especialidade === '' || dtNasc === '' || genero === ''){
         UI.showNotification('Preencha todos os campos', 'danger');
     }else{
@@ -143,5 +142,4 @@ function getAge(){
     console.log(ano);
 
     return today - ano;
-        
 }
