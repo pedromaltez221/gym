@@ -1,7 +1,7 @@
 //Classe Reaproveitada das videos aulas do professor Kutova
 // Define o nome do cache atual, considerando a sua versão.
 
-var cacheName = 'boraBillGymv1.0';
+var cacheName = 'borabillgym-swv1.0';
 
 // Armazena todos os arquivos no cache atual
 self.addEventListener('install', function (event) {
@@ -23,7 +23,7 @@ self.addEventListener('install', function (event) {
       '/assets/favicon/android-icon-72x72.png',
       '/assets/favicon/android-icon-96x96.png',
       '/assets/favicon/android-icon-144x144.png',
-      '/assets/favicon/android-icon-192x192.png'
+      '/assets/favicon/android-icon-192x192.png',
     ]);
   });
 });

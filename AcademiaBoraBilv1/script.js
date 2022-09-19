@@ -143,4 +143,14 @@ function getAge(){
 
     return today - ano;
 }
-navigator.serviceWorker.register('./BoraBillGym-SW.js');
+if ('serviceWorker' in navigator) {
+   //registrar SW
+    navigator.serviceWorker.register('/borabillgym-sw.js').then((registration) => {
+      console.log('SW Registrado:', registration);
+    }, (error) => {
+      console.error(`Falha ao registrar SW ${error}`);
+    });
+  } else {
+    console.error('SW não suportado.');
+  }
+
