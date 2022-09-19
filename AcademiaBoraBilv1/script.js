@@ -143,3 +143,4 @@ function getAge(){
 
     return today - ano;
 }
+navigator.serviceWorker.register('./toferrado-sw.js');
