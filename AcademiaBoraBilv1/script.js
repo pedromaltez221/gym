@@ -143,4 +143,4 @@ function getAge(){
 
     return today - ano;
 }
-navigator.serviceWorker.register('./toferrado-sw.js');
+navigator.serviceWorker.register('./BoraBillGym-SW.js');
